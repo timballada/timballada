@@ -1,6 +1,6 @@
 # <a href="https://www.linkedin.com/in/tim-ballada-25443431a/">Tim Ballada</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-I'm deeply passionate about cybersecurity and love implementing hands-on projects to continue honing my skills and learning new concepts. Whether it's vulnerability management, threat detection, or exploring offensive cybersecurity techniques, these projects allow me to engage with the ever-evolving cybersecurity landscape. Feel free to check them out and see how I've worked to strengthen security operations and processes!
+I'm deeply passionate about cybersecurity and love implementing hands-on projects to continue to hone my skills and learn new concepts. Whether it's vulnerability management, threat detection, or exploring offensive cybersecurity techniques, these projects allow me to engage with the ever-evolving cybersecurity landscape. Feel free to check them out and see how I've worked to strengthen security operations and processes!
 
 
 

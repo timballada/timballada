@@ -11,7 +11,7 @@
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
-    STIG-ID         : WN10-AU-000066
+    STIG-ID         : WN10-CC-000066
 
 .TESTED ON
     Date(s) Tested  : 
@@ -22,7 +22,7 @@
 .USAGE
     Put any usage instructions here.
     Example syntax:
-    PS C:\> .\WN10-AU-000066.ps1 
+    PS C:\> .\WN10-CC-000066.ps1 
 #>
 
 # Define variables

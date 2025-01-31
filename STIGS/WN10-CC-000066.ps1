@@ -2,7 +2,6 @@
 .SYNOPSIS
     This PowerShell script ensures that command line data is included in process creation events.
 
-
 .NOTES
     Author          : Tim Ballada
     LinkedIn        : https://www.linkedin.com/in/tim-ballada-25443431a/

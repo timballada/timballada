@@ -1,6 +1,7 @@
 <#
 .SYNOPSIS
     This PowerShell script ensures that local accounts with blank passwords are restricted to prevent access from the network.
+    
 .NOTES
     Author          : Tim Ballada
     LinkedIn        : https://www.linkedin.com/in/tim-ballada-25443431a/

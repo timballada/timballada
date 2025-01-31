@@ -25,7 +25,6 @@
     PS C:\> .\WN10-AU-000500.ps1 
 #>
 
-
 # Define variables
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
 $propertyName = "MaxSize"

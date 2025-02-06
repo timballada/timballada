@@ -4,7 +4,7 @@
 
 .NOTES
     Author          : Tim Ballada
-    LinkedIn        : https://www.linkedin.com/in/tim-ballada-25443431a/
+    LinkedIn        : linkedin.com/in/timballada
     GitHub          : github.com/timballada
     Date Created    : 2025-01-30
     Last Modified   : 2025-01-30

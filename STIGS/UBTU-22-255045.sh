@@ -1,4 +1,4 @@
-<#
+<<COMMENT
 .SYNOPSIS
     This bash script ensures that the Ubuntu 22.04 LTS SSH daemon prevents remote hosts from connecting to the proxy display.
 
@@ -18,7 +18,7 @@
     Example syntax:
     example@linux-terminal:~$ chmod +x UBTU-22-255045.sh
     example@linux-terminal:~$ sudo ./UBTU-22-255045.sh
-#>
+COMMENT
 
 #!/bin/bash
 # This script ensures that X11UseLocalhost is set to "yes" in /etc/ssh/sshd_config

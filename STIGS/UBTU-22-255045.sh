@@ -1,16 +1,28 @@
+<#
+.SYNOPSIS
+    This bash script ensures that the Ubuntu 22.04 LTS SSH daemon prevents remote hosts from connecting to the proxy display.
 
-
-
-
-
-
-
+.NOTES
+    Author          : Tim Ballada
+    LinkedIn        : linkedin.com/in/timballada
+    GitHub          : github.com/timballada
+    Date Created    : 2025-02-07
+    Last Modified   : 2025-02-07
+    Version         : 1.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
+    STIG-ID         : UBTU-22-255045
+    
+.USAGE
+    Put any usage instructions here.
+    Example syntax:
+    example@linux-terminal:~$ chmod +x UBTU-22-255045.sh
+    example@linux-terminal:~$ sudo ./UBTU-22-255045.sh
+#>
 
 #!/bin/bash
-# fix_x11uselocalhost.sh
 # This script ensures that X11UseLocalhost is set to "yes" in /etc/ssh/sshd_config
 # to prevent remote hosts from connecting to the SSH X11 proxy display.
-#
 # STIG ID: UBTU-22-255045
 
 # Exit immediately if a command exits with a non-zero status.

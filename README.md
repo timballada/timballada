@@ -8,7 +8,7 @@ I'm deeply passionate about cybersecurity and love implementing hands-on project
 ## ⚠️ Vulnerability Management Projects
 
 - **[Vulnerability Management Program Implementation](https://github.com/timballada/vulnerability-management-program)**
-- **[STIG Implementations for Linux using Bash & Windows using Poweshell](https://github.com/timballada/timballada/tree/main/STIGS)**
+- **[STIG Implementations for Linux using Bash & Windows using Powershell](https://github.com/timballada/timballada/tree/main/STIGS)**
 
 
 <hr/>

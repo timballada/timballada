@@ -1,6 +1,6 @@
 <<COMMENT
 .SYNOPSIS
-    This bash script ensures that the Ubuntu 22.04 LTS SSH daemon prevents remote hosts from connecting to the proxy display.
+    This Bash script ensures that the Ubuntu 22.04 LTS SSH daemon prevents remote hosts from connecting to the proxy display.
 
 .NOTES
     Author          : Tim Ballada

@@ -1,6 +1,7 @@
 <<COMMENT
 .SYNOPSIS
     This Bash script ensures that Ubuntu 22.04 LTS enforces password complexity by requiring at least one lowercase character be used.
+    
 .NOTES
     Author          : Tim Ballada
     LinkedIn        : linkedin.com/in/timballada
@@ -34,20 +35,20 @@ DESIRED_LINE='lcredit = -1'
                                                                                      
 # Check if the file exists; if not, create it with the desired configuration.                                                                                     
 if [ ! -f "$PW_CONF" ]; then                                                                                     
-            echo "File $PW_CONF not found. Creating file with the required configuration." 
-                echo "$DESIRED_LINE" > "$PW_CONF" 
-                    exit 0 
+    echo "File $PW_CONF not found. Creating file with the required configuration." 
+    echo "$DESIRED_LINE" > "$PW_CONF" 
+    exit 0 
 fi 
                                                                                      
 # Determine if the file already contains an occurrence of "lcredit"                                                                                     
 if grep -Eiq '^\s*#?\s*lcredit\s*=' "$PW_CONF"; then                                                                                     
-            # Use sed to update all occurrences (commented or not) to the desired configuration.                                                                                     
-                sed -i -E "s/^\s*#?\s*lcredit\s*=.*/$DESIRED_LINE/" "$PW_CONF"                                                                                     
-                    echo "Updated lcredit in $PW_CONF to '-1'."                                                                                     
-            else                                                                                     
-                        # If no lcredit line is found, append the desired configuration.                                                                                     
-                            echo "$DESIRED_LINE" >> "$PW_CONF"                                                                                     
-                                echo "Added '$DESIRED_LINE' to $PW_CONF."                                                                                     
+    # Use sed to update all occurrences (commented or not) to the desired configuration.                                                                                     
+    sed -i -E "s/^\s*#?\s*lcredit\s*=.*/$DESIRED_LINE/" "$PW_CONF"                                                                                     
+    echo "Updated lcredit in $PW_CONF to '-1'."                                                                                     
+else                                                                                     
+    # If no lcredit line is found, append the desired configuration.                                                                                     
+    echo "$DESIRED_LINE" >> "$PW_CONF"                                                                                     
+    echo "Added '$DESIRED_LINE' to $PW_CONF."                                                                                     
 fi                                                                                     
                                                                                      
 exit 0

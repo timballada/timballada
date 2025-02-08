@@ -1,6 +1,7 @@
 <<COMMENT
 .SYNOPSIS
     This Bash script ensures that Ubuntu 22.04 LTS is configured so that the "journalctl" command is not accessible by unauthorized users.
+    
 .NOTES
     Author          : Tim Ballada
     LinkedIn        : linkedin.com/in/timballada
@@ -28,7 +29,7 @@ COMMENT
 # Ensure the script is run as root.
 if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root. Use sudo."
-        exit 1
+    exit 1
 fi
 
 JOURNALCTL="/usr/bin/journalctl"
@@ -36,7 +37,7 @@ JOURNALCTL="/usr/bin/journalctl"
 # Check if journalctl exists.
 if [ ! -f "$JOURNALCTL" ]; then
     echo "Error: $JOURNALCTL does not exist."
-        exit 1
+    exit 1
 fi
 
 # Retrieve the current permission of journalctl.
@@ -46,19 +47,18 @@ echo "Current permissions for $JOURNALCTL: $current_perm"
 # Check if the permission is set to 740.
 if [ "$current_perm" = "740" ]; then
     echo "Permissions are already correctly set to 740."
-    else
-        echo "Setting permissions to 740..."
+else
+    echo "Setting permissions to 740..."
     chmod 740 "$JOURNALCTL"
         
-        # Verify the change.
+    # Verify the change.
     new_perm=$(stat -c "%a" "$JOURNALCTL")
-        if [ "$new_perm" = "740" ]; then
+    if [ "$new_perm" = "740" ]; then
         echo "Successfully set permissions to 740."
     else
-            echo "Error: Failed to set permission
-s on $JOURNALCTL." >&2
-            exit 1
-        fi
+        echo "Error: Failed to set permissions on $JOURNALCTL." >&2
+        exit 1
+    fi
 fi
 
 exit 0

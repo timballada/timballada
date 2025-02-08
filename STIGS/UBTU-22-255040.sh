@@ -35,7 +35,7 @@ set -e
 # Verify that the script is executed with root privileges.
 if [ "$EUID" -ne 0 ]; then
     echo "This script must be run as root. Try running with sudo."
-        exit 1
+    exit 1
 fi
 
 SSHD_CONFIG="/etc/ssh/sshd_config"
@@ -43,7 +43,7 @@ SSHD_CONFIG="/etc/ssh/sshd_config"
 # Check if the sshd configuration file exists.
 if [ ! -f "$SSHD_CONFIG" ]; then
     echo "Error: $SSHD_CONFIG not found. Aborting."
-        exit 1
+    exit 1
 fi
 
 echo "Modifying $SSHD_CONFIG to disable X11 forwarding..."
@@ -51,12 +51,12 @@ echo "Modifying $SSHD_CONFIG to disable X11 forwarding..."
 # Check if any line setting X11Forwarding exists (including commented-out ones).
 if grep -Eiq "^\s*#?\s*X11Forwarding" "$SSHD_CONFIG"; then
     # Update any existing occurrence to "X11Forwarding no".
-        sed -i -r 's/^\s*#?\s*X11Forwarding\s+.*/X11Forwarding no/' "$SSHD_CONFIG"
+    sed -i -r 's/^\s*#?\s*X11Forwarding\s+.*/X11Forwarding no/' "$SSHD_CONFIG"
     echo "Updated existing X11Forwarding setting to 'no'."
-    else
-        # Append the directive if it doesn't exist.
+else
+    # Append the directive if it doesn't exist.
     echo -e "\nX11Forwarding no" >> "$SSHD_CONFIG"
-        echo "Appended 'X11Forwarding no' to $SSHD_CONFIG."
+    echo "Appended 'X11Forwarding no' to $SSHD_CONFIG."
 fi
 
 # Restart the SSH daemon to apply the changes.
@@ -66,8 +66,8 @@ systemctl restart sshd.service
 # Verify that the SSH daemon is active.
 if systemctl is-active --quiet sshd.service; then
     echo "SSH daemon restarted successfully. X11 forwarding is now disabled."
-    else
-        echo "Error: SSH daemon did not restart successfully." >&2
+else
+    echo "Error: SSH daemon did not restart successfully." >&2
     exit 1
 fi
 

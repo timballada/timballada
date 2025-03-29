@@ -2,11 +2,11 @@
 
 I'm deeply passionate about IT and love implementing hands-on projects to continue to hone my skills and learn new concepts. Whether it's vulnerability management, web development, or exploring offensive cybersecurity techniques, these projects allow me to engage with the ever-evolving cybersecurity landscape. Feel free to check them out and see how I've worked to strengthen security operations and processes!
 
-## 👨‍💻 Web Development Projects
+## 👨‍💻 Web Development
 - **[Arcade Style Snake Game ](https://github.com/timballada/retro-snake-game)**
 
 
-## ⚠️ Vulnerability Management Projects
+## ⚠️ Vulnerability Management
 
 - **[Vulnerability Management Program Implementation](https://github.com/timballada/vulnerability-management-program)**
 - **[STIG Implementations for Linux(Bash) & Windows(PowerShell)](https://github.com/timballada/timballada/tree/main/STIGS)**

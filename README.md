@@ -1,6 +1,6 @@
 # <a href="https://linkedin.com/in/timballada">Tim Ballada</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-I'm deeply passionate about IT and love implementing hands-on projects to continue to hone my skills and learn new concepts. Whether it's vulnerability management, web development, or exploring offensive cybersecurity techniques, these projects allow me to engage with the ever-evolving technology landscape. Feel free to check them out and see how I've worked to strengthen security operations and processes!
+I get a lot of satisfaction from learning about IT and implementing hands-on projects to hone my skills. Whether it's vulnerability management, web development, or exploring offensive cybersecurity techniques, these projects allow me to engage with the ever-evolving technology landscape. Feel free to check them out and see how I've worked to strengthen security operations and processes!
 
 ## 👨‍💻 Web Development
 - **[Arcade Style Snake Game ](https://github.com/timballada/retro-snake-game)**
